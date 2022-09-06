@@ -1,3 +1,6 @@
 # Web Dev For Non Techies
 
-This repository was bootstrapped with [Code Shaper](https://code-shaper.dev).
+Repository for my upcoming Medium article "Web Development Concepts for
+Non-Techies".
+
+![Screenshot](assets/screenshot.png)

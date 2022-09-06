@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Mountain Vacations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <span class="header__title">Mountain Vacations</span>
+    </header>
+    <main class="main">
+      <div class="content">
+        <div class="destination-list">
+          <ul class="list">
+            <li
+              id="mountEverest"
+              class="list__item list__item--selected"
+              onclick="select(this)"
+            >
+              Mount Everest Base Camp, Nepal
+            </li>
+            <li
+              id="jotunheimenMountains"
+              class="list__item"
+              onclick="select(this)"
+            >
+              Jotunheimen Mountains, Norway
+            </li>
+            <li
+              id="denaliNationalPark"
+              class="list__item"
+              onclick="select(this)"
+            >
+              Denali National Park, USA
+            </li>
+          </ul>
+        </div>
+        <div class="destination">
+          <h1 class="destination__title">Mount Everest Base Camp, Nepal</h1>
+          <img
+            class="destination__img"
+            src="images/mount-everest-base-camp.jpg"
+            alt="Mount Everest Base Camp, Nepal"
+          />
+          <div class="destination__description">
+            There are fourteen mountains on this planet that are higher than
+            8,000 meters and ten of those mountains are within the Himalayas. At
+            8,848 meters (or 29,029 feet), Mount Everest stands above all others
+            as the tallest mountain in the world.
+          </div>
+          <div class="citation">
+            Joshua Hewitt (2020, May 16). The Top 20 Mountain Travel
+            Destinations in the World. Retrieved from
+            https://wanderlustphotosblog.com
+          </div>
+          <div class="destination__action-bar">
+            <button class="button">Sign me up</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "mountain-vacations-vanilla",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Naresh Bhatia",
+  "scripts": {
+    "dev": "live-server --port=3000 --host=localhost ."
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "npm": ">5"
+  }
+}

@@ -1,0 +1,204 @@
+/* ----- Reset ----- */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  line-height: 1.5;
+  font-family: Inter, serif;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  line-height: inherit;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove the default font size and weight for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Removes default margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- Buttons ----- */
+.button {
+  font-family: inherit;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: var(--sp-2) var(--sp-6);
+}
+
+.button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* ----- Header ----- */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--sp-6);
+  height: var(--sp-12);
+  min-height: var(--sp-12);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.header__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+}
+
+/* ----- Main ----- */
+.main {
+  flex: 1;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--sp-4);
+}
+
+/* ----- Content ----- */
+.content {
+  height: 100%;
+  display: flex;
+  background-color: var(--color-white);
+  padding: var(--sp-4) 0;
+}
+
+/* ----- List ----- */
+.list__item {
+  height: var(--sp-12);
+  padding: 0 var(--sp-4);
+  display: flex;
+  align-items: center;
+  font-weight: var(--font-weight-medium);
+}
+
+.list__item--selected {
+  background-color: var(--color-list-selected);
+}
+
+.list__item:hover {
+  background-color: var(--color-list-hover);
+}
+
+/* ----- Destination List ----- */
+.destination-list {
+  flex: 0 0 300px;
+  border-right: 1px solid var(--color-divider);
+}
+
+/* ----- Destination Detail ----- */
+.destination {
+  flex: 1;
+  padding: 0 var(--sp-4);
+}
+
+.destination__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.875;
+  margin-bottom: var(--sp-2);
+}
+
+.destination__img {
+  width: 100%;
+}
+
+.destination__description {
+  margin-top: var(--sp-4);
+}
+
+.destination__action-bar {
+  margin-top: var(--sp-8);
+}
+
+/* ----- Citation ----- */
+.citation {
+  margin-top: var(--sp-4);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+/* ----- CSS Variables ----- */
+:root {
+  /* ----- Color Palette ----- */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-primary: #0a558c;
+  --color-primary-dark: #003e6b;
+
+  --color-background: #f1f2f6;
+  --color-text: #102a43;
+  --color-text-muted: #486581;
+  --color-list-hover: #d9e2ec;
+  --color-list-selected: #bcccdc;
+  --color-divider: #bcccdc;
+
+  /* ----- Typography ----- */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* ------------ Spacing ----------- */
+  /* One spacing unit = 0.25rem = 4px */
+  --sp-0: 0px;
+  --sp-px: 1px;
+  --sp-1: 0.25rem; /* 4px */
+  --sp-2: 0.5rem; /* 8px */
+  --sp-3: 0.75rem; /* 12px */
+  --sp-4: 1rem; /* 16px */
+  --sp-5: 1.25rem; /* 20px */
+  --sp-6: 1.5rem; /* 24px */
+  --sp-7: 1.75rem; /* 28px */
+  --sp-8: 2rem; /* 32px */
+  --sp-9: 2.25rem; /* 36px */
+  --sp-10: 2.5rem; /* 40px */
+  --sp-11: 2.75rem; /* 44px */
+  --sp-12: 3rem; /* 48px */
+}
