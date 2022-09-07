@@ -18,7 +18,7 @@
     "test": "turbo run test",
     "clean": "turbo run clean && rimraf node_modules",
     "prepare": "husky install",
-    "format": "prettier --write \"**/README.md\" \"**/src/**/*.{js,jsx,ts,tsx,json}\""
+    "format": "prettier --write \"**/README.md\" \"**/src/**/*.{css,js,jsx,ts,tsx,json}\""
   },
   "devDependencies": {
     "@code-shaper/react": "latest",

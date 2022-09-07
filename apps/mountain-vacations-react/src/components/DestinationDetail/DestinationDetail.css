@@ -1,0 +1,23 @@
+.destination {
+  flex: 1;
+  padding: 0 var(--sp-4);
+}
+
+.destination__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.875;
+  margin-bottom: var(--sp-2);
+}
+
+.destination__img {
+  width: 100%;
+}
+
+.destination__description {
+  margin-top: var(--sp-4);
+}
+
+.destination__action-bar {
+  margin-top: var(--sp-8);
+}

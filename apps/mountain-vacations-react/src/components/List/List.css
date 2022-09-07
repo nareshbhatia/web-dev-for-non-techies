@@ -1,0 +1,15 @@
+.list__item {
+  height: var(--sp-12);
+  padding: 0 var(--sp-4);
+  display: flex;
+  align-items: center;
+  font-weight: var(--font-weight-medium);
+}
+
+.list__item--selected {
+  background-color: var(--color-list-selected);
+}
+
+.list__item:hover {
+  background-color: var(--color-list-hover);
+}
